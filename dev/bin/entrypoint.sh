@@ -18,9 +18,6 @@
 ### magento.repo
 [ ! -z "${MAGENTO_REPO_PUBLIC_KEY}" ] && sed -i "s/MAGENTO_REPO_PUBLIC_KEY/${MAGENTO_REPO_PUBLIC_KEY}/" /home/$MAGENTO_USER/.composer/auth.json
 [ ! -z "${MAGENTO_REPO_PRIVATE_KEY}" ] && sed -i "s/MAGENTO_REPO_PRIVATE_KEY/${MAGENTO_REPO_PRIVATE_KEY}/" /home/$MAGENTO_USER/.composer/auth.json
-### pengo.repo
-[ ! -z "${PENGO_REPO_PUBLIC_KEY}" ] && sed -i "s/PENGO_REPO_PUBLIC_KEY/${PENGO_REPO_PUBLIC_KEY}/" /home/$MAGENTO_USER/.composer/auth.json
-[ ! -z "${MAGENTO_VERSION}" ] && sed -i "s/MAGENTO_VERSION/${MAGENTO_VERSION}/" /home/$MAGENTO_USER/m2install.sh
 ### supervisord
 [ ! -z "${MAGENTO_USER}" ] && sed -i "s/MAGENTO_USER/${MAGENTO_USER}/" /etc/supervisord.conf
 
